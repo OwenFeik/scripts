@@ -20,7 +20,7 @@ https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_bookm
 	margin-bottom: calc(2px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
 	transform: rotateX(90deg);
 	transform-origin: top;
-	transition: transform 135ms linear 600ms !important;
+	transition: transform 150ms linear 200ms !important;
   z-index: 1;
 }
 #PlacesToolbarItems > .bookmark-item{ padding-block: var(--uc-bm-padding) !important; }
@@ -30,13 +30,13 @@ https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_bookm
 
 /* Show when urlbar is focused */
 #nav-bar:focus-within + #PersonalToolbar{
-  transition-delay: 100ms !important;
+  transition-delay: 0ms !important;
   transform: rotateX(0);
 }
 
 /* Show when cursor is over the toolbar area */
 #navigator-toolbox:hover > #PersonalToolbar{
-	transition-delay: 100ms !important;
+	transition-delay: 0ms !important;
 	transform: rotateX(0);
 }
 
