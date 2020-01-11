@@ -1,3 +1,13 @@
+/* 
+Might be useful:
+
+https://www.reddit.com/r/FirefoxCSS/comments/elxyng/ff_72_broke_my_userchrome_css_rule_for_the/
+https://www.reddit.com/r/FirefoxCSS/comments/elgzdi/autohide_scrollbar_and_address_bar_broken_in/fdiakau/
+*/
+
+/*
+https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_bookmarks_toolbar.css
+*/
 #PersonalToolbar{
   --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */
   --uc-bm-padding: 3px; /* Vertical padding to be applied to bookmarks */
@@ -30,11 +40,20 @@
 	transform: rotateX(0);
 }
 
+/*
+https://www.reddit.com/r/FirefoxCSS/comments/elgzdi/autohide_scrollbar_and_address_bar_broken_in/fdis069/
+*/
 #PersonalToolbar:not([customizing]){
 	margin-bottom: calc(-4px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
 	
 }
 
+
+/*
+Broken on update to FF72
+https://github.com/Timvde/UserChrome-Tweaks/blob/master/toolbars/show-bookmarks-only-on-newtab.css
+https://www.reddit.com/r/FirefoxCSS/comments/7evwow/show_bookmarks_toolbar_only_on_new_tab/
+*/
 /*
 #main-window #PersonalToolbar {
     visibility: collapse !important;
@@ -50,4 +69,3 @@
     visibility: visible !important;
 }
 */
-
