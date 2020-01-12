@@ -44,6 +44,7 @@ https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_bookm
 https://www.reddit.com/r/FirefoxCSS/comments/elgzdi/autohide_scrollbar_and_address_bar_broken_in/fdis069/
 */
 #PersonalToolbar:not([customizing]){
+  /* -4px for XPS13 Manjaro, 1px for XPS13 Windows */
 	margin-bottom: calc(-4px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
 	
 }
